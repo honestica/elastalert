@@ -1,4 +1,4 @@
-**Docker image for Elastalert and Lifen Platform**
+*Docker image for Elastalert and Lifen Platform*
 
 https://elastalert.readthedocs.io
 
@@ -21,5 +21,5 @@ Elastalert should be able to dynamically apply changes to config files.
 
 *TODO*
 
-[] Setup elastalert in production
-[] Separate this repo in "docker image" and "rules for lifen -Platform"
+- Setup elastalert in production
+- Separate this repo: "docker image" and "rules for lifen-platform"
