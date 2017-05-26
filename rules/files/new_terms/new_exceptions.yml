@@ -1,0 +1,34 @@
+import: ../../model/slack.yml
+
+# Alert when an unknow exception occurs
+
+
+# (Required)
+# Rule name
+name: ":boom: First time exception !"
+
+# (Required)
+# Type of alert.
+# the frequency rule type alerts when num_events events occur with timeframe time
+type: new_term
+
+#initial time window to lookup when initializing
+terms_window_size:
+  days: 15
+
+# (Required)
+# Index to search, wildcard supported
+index: logstash-*
+
+#ES query
+filter:
+- match:
+    level: "ERROR"
+
+#the fields to search for new fields
+#Here we define error unicity as a composite truple: Exception, method, and class name
+fields:
+  -
+    - EXCEPTION_NAME
+    - logger_name
+    - METHOD_NAME

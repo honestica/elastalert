@@ -1,0 +1,15 @@
+import: ../../model/exceptions_spike.yml
+
+# Alert when there is a sudden spike in the volume of some exceptions
+
+# (Required)
+# Rule name, must be unique
+name: ":roller_coaster:  Event spike InvalidSmsCodeException"
+
+# (Required)
+# A list of Elasticsearch filters used for find events
+# These filters are joined with AND and nested in a filtered query
+# For more info: http://www.elasticsearch.org/guide/en/elasticsearch/reference/current/query-dsl.html
+filter:
+- match:
+    EXCEPTION_NAME: "com.honestica.authentication.exception.InvalidSmsCodeException"
