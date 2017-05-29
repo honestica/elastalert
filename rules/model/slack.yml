@@ -1,6 +1,0 @@
-# (Required)
-# The alert is use when a match is found
-alert:
-- slack
-
-slack_webhook_url: https://hooks.slack.com/services/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
