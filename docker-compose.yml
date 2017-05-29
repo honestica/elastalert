@@ -1,9 +1,0 @@
-
-elastalert:
-    image: honestica/elastalert:0.1.14
-    environment:
-        ES_HOST: kibana.technical.honestica.com
-        ES_PORT: 9200
-    volumes:
-      - ./rules/:/rules
-    restart: unless-stopped
