@@ -1,4 +1,4 @@
-# Docker image for Elastalert and Lifen Platform
+# Docker image for Elastalert
 
 https://elastalert.readthedocs.io
 
