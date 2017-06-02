@@ -12,5 +12,5 @@ You can mount these two volumes when launching your docker container.
 Elastalert should be able to dynamically apply changes to config files.
 
 
-## Image name
+## Image
 `docker pull honestica/elastalert:0.1.14`
